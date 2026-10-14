@@ -40,6 +40,11 @@ section{display:flex;flex-direction:column}
 .case b{font-size:17px}
 .case span{color:var(--muted);font-size:15px}
 .tag{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700;padding:2px 8px;margin-right:6px;vertical-align:1px}
+.books{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.book{display:flex;flex-direction:column;gap:10px;min-width:0}
+.book img{width:100%;max-width:220px;height:auto;display:block;border:1px solid var(--rule)}
+.book b{font-size:17px;line-height:1.4}
+.book span{color:var(--muted);font-size:14px}
 @media (max-width:480px){.tl li{grid-template-columns:1fr}.tl .d{padding-top:0}}
 </style>
 <style>body{margin:0}</style>
@@ -90,6 +95,13 @@ section{display:flex;flex-direction:column}
     <div class="case"><b>홈앤쇼핑 대주주 특혜 문제</b><span>대주주 특혜 문제를 국정감사에서 따져, 당시 대표이사 면직으로 이어졌습니다.</span></div>
     <div class="case"><b>KT 위약금 문제</b><span>통신 위약금 문제를 SK텔레콤에 이어 KT에서도 해결했습니다.</span></div>
   </div>
+</section>
+<section>
+  <h2>저서</h2>
+  <ul class="books">
+    <li class="book"><b>한자에서 국어의 신난다</b><span>저서</span></li>
+    <li class="book"><b>발효식이 답이다</b><span>번역서 (일본어)</span></li>
+  </ul>
 </section>
 </div>
 </body>
